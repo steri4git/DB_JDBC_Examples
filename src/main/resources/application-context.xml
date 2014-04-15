@@ -23,8 +23,8 @@
 	<bean id="queries" class="java.util.HashMap">
 		<constructor-arg>
 			<map>
-				<entry key="COUNT" value="SELECT COUNT (*) FROM CUSTOMER" />
-				<entry key="COUNT2" value="SELECT COUNT (*) FROM Person" />
+				<entry key="COUNT" value="SELECT COUNT (*) FROM Person" />
+				<entry key="SELECT_ALL" value="SELECT * FROM PERSON"/>
 			</map>
 		</constructor-arg>
 	</bean>

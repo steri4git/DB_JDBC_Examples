@@ -14,8 +14,13 @@ public class JDBCTemplateTest {
 	private SimpleJDBCTemplateExamples simpleJDBCTemplateExamples;
 
 	@Test
-	public void simpleTest() {
-		System.out.println(simpleJDBCTemplateExamples.readData());
+	public void readDataIntTest() {
+		simpleJDBCTemplateExamples.readDataInt();
+
+	}
+	@Test
+	public void readDataListTest() {
+		simpleJDBCTemplateExamples.readDataList();
 
 	}
 }
