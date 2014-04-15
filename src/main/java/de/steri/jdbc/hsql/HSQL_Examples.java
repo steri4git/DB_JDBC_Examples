@@ -1,4 +1,4 @@
-package de.steri.hsql.simplejdbc;
+package de.steri.jdbc.hsql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

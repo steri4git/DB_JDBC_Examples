@@ -8,6 +8,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
+import de.steri.jdbc.domain.Person;
+
 @Transactional
 public class SimpleJDBCTemplateExamples {
 
@@ -28,9 +30,14 @@ public class SimpleJDBCTemplateExamples {
 
 	@Transactional
 	@Rollback(false) 
-	public int readData() {
-		
-		return jdbcTemplate.queryForInt(queries.get("COUNT2"));
+	public int readDataInt() {
+		return jdbcTemplate.queryForInt(queries.get("COUNT"));
+	}
+	
+	@Transactional
+	@Rollback(false) 
+	public void readDataList() {
+		System.out.println(jdbcTemplate.queryForList(queries.get("SELECT_ALL")));
 	}
 	
 }
