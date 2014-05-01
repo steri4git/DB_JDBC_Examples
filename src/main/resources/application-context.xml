@@ -25,6 +25,7 @@
 			<map>
 				<entry key="COUNT" value="SELECT COUNT (*) FROM Person" />
 				<entry key="SELECT_ALL" value="SELECT * FROM PERSON"/>
+				<entry key="SELECT_BY_ID" value="SELECT * FROM PERSON WHERE Id =?"/>
 			</map>
 		</constructor-arg>
 	</bean>

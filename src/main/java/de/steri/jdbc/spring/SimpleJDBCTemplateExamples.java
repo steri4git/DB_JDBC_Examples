@@ -40,5 +40,12 @@ public class SimpleJDBCTemplateExamples {
 		System.out.println(jdbcTemplate.queryForList(queries.get("SELECT_ALL")));
 	}
 	
+	public void readDataWithRowMapper (){
+		System.out.println("START QUERY");
+		System.out.println(jdbcTemplate.queryForObject("SELECT_WITH_ID", new PersonRowMapper()));
+	}
+	
+	
+	
 }
 
